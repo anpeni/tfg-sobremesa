@@ -8,7 +8,18 @@
             id = "nombre"
             [(ngModel)]="empleado.name"
             name = "nombre">
+            <!-- required
+            minlength="4"
+            maxlength="10"
+            placeholder="Introduzca nombre"
+            #nombre = "ngModel"> -->
         </div>
+        <!-- <div class ="alert alert-danger" *ngIf="nombre.invalid && (nombre.dirty||nombre.touched)">
+            <div *ngIf="nombre.hasError('required')">
+                El nombre es requerido.
+
+            </div>
+        </div> -->
         <div class="form-group m-3">
             <label class ="mb-2">Apellidos :</label>
             <input type="text"
